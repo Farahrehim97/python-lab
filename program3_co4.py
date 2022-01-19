@@ -1,8 +1,8 @@
 class rectangle:
     def __init__(self,length,breadth):
-        self.length=length
-        self.breadth=breadth
-        self.area=length*breadth
+        self.__length=length
+        self.__breadth=breadth
+        self.area=self.__length*self.__breadth
 
     def __gt__(self,other):
         if(self.area>other.area):
@@ -16,6 +16,7 @@ if(r1>r2):
     print("Rectangle 1 is greater")
 else:
     print("Rectangle 2 is greater")
+
 
 
     
