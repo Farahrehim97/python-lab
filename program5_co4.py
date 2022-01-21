@@ -8,7 +8,7 @@ class Book(Publisher):
         Publisher.__init__(self,name)
         self.title=title
         self.author=author
-    def bookdisplay(self):
+    def display(self):
         self.pubdisplay()
         print("Title = ",self.title)
         print("Author = ",self.author)
@@ -17,9 +17,11 @@ class Python(Book):
         Book.__init__(self,name,title,author)
         self.price=price
         self.nopages=nopages
-    def pythondisplay(self):
-        self.bookdisplay()
+    def display(self):
+        self.pubdisplay()
+        print("Title = ",self.title)
+        print("Author = ",self.author)
         print("Price = ",self.price)
         print("No of pages = ",self.nopages)
 p1=Python("computerbooks","Pythonprogramming","R K S",3000,350)
-p1.pythondisplay()
+p1.display()
