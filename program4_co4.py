@@ -1,11 +1,11 @@
 class time:
     def __init__(self,hour,minute,sec):
-        self.hour=hour
-        self.minute=minute
-        self.sec=sec
+        self.__hour=hour
+        self.__minute=minute
+        self.__sec=sec
 
     def __add__(self,other):
-        return self.hour+other.hour,self.minute+other.minute,self.sec+other.sec
+        return self.__hour+other.__hour,self.__minute+other.__minute,self.__sec+other.__sec
 
 t1=time(3,22,35)
 t2=time(5,40,34)
