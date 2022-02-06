@@ -4,6 +4,7 @@ f.write("python lab")
 f.close()
 l=[]
 f=open("co5.txt","r")
-for x in f:
-    l=x
+l=f.readlines()
+f.close()
 print(l)
+
